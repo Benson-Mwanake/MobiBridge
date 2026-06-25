@@ -15,12 +15,16 @@ function Navbar() {
         {/* Brand Logo */}
         <Link
           to="/"
-          className="flex items-center gap-2 font-bold text-xl tracking-tight text-foreground hover:opacity-90 transition-opacity"
+          className="flex items-center gap-3 hover:opacity-90 transition-opacity"
         >
-          <span className="flex h-8 w-8 items-center justify-center rounded-md bg-primary text-primary-foreground font-serif text-lg font-semibold shadow-xs">
-            M
+          <img
+            src="/public/mobibridge.png"
+            alt="MobiBridge Logo"
+            className="h-8 w-8 object-contain"
+          />
+          <span className="font-bold text-xl tracking-tight text-foreground">
+            MobiBridge
           </span>
-          <span>MobiBridge</span>
         </Link>
 
         {/* Desktop Navigation Links */}

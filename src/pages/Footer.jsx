@@ -10,12 +10,14 @@ function Footer() {
         <div className="space-y-4">
           <Link
             to="/"
-            className="flex items-center gap-2 font-bold text-foreground text-base transition-opacity hover:opacity-90"
+            className="flex items-center gap-2 text-base font-bold text-foreground transition-opacity hover:opacity-90"
           >
-            <span className="flex h-6 w-6 items-center justify-center rounded bg-primary text-primary-foreground font-serif text-xs font-semibold">
-              M
-            </span>
-            MobiBridge
+            <img
+              src="/public/mobibridge.png"
+              alt="MobiBridge Logo"
+              className="h-6 w-6 object-contain"
+            />
+            <span>MobiBridge</span>
           </Link>
 
           <p className="max-w-xs text-xs leading-relaxed text-muted-foreground">
