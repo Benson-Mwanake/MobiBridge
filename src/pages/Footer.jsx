@@ -13,7 +13,7 @@ function Footer() {
             className="flex items-center gap-2 text-base font-bold text-foreground transition-opacity hover:opacity-90"
           >
             <img
-              src="/src/images/mobibridge.png"
+              src="/mobibridge.png"
               alt="MobiBridge Logo"
               className="h-6 w-6 object-contain"
             />

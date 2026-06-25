@@ -18,7 +18,7 @@ function Navbar() {
           className="flex items-center gap-3 hover:opacity-90 transition-opacity"
         >
           <img
-            src="/src/images/mobibridge.png"
+            src="/mobibridge.png"
             alt="MobiBridge Logo"
             className="h-8 w-8 object-contain"
           />
