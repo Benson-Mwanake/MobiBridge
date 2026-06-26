@@ -1,0 +1,16 @@
+{
+  "name": "MobiBridge",
+  "short_name": "MobiBridge",
+  "description": "Healthcare logistics coordination platform",
+  "theme_color": "#0F766E",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/mobibridge.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
