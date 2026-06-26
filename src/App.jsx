@@ -3,6 +3,8 @@ import { Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import "./App.css";
 import Navigation from "./components/Navigation";
+import TermsPage from "./pages/Terms";
+import PrivacyPage from "./pages/Privacy";
 
 import Home from "./pages/Home";
 import Product from "./pages/Product";
@@ -32,6 +34,8 @@ function App() {
           <Route path="/impact" element={<Impact />} />
           <Route path="/about" element={<About />} />
           <Route path="/early-access" element={<EarlyAccessPage />} />
+          <Route path="/terms" element={<TermsPage />} />
+          <Route path="/privacy" element={<PrivacyPage />} />
         </Routes>
       </main>
       <Footer />

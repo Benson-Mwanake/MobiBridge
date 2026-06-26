@@ -89,6 +89,22 @@ function Footer() {
                 Impact Reporting
               </Link>
             </li>
+            <li>
+              <Link
+                to="/terms"
+                className="hover:text-primary transition-colors"
+              >
+                Terms of Use
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/privacy"
+                className="hover:text-primary transition-colors"
+              >
+                Privacy Policy
+              </Link>
+            </li>
           </ul>
         </div>
 
