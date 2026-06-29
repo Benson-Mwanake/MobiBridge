@@ -2,9 +2,8 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import "./App.css";
-import Navigation from "./components/Navigation";
-import TermsPage from "./pages/Terms";
-import PrivacyPage from "./pages/Privacy";
+
+import MainLayout from "./layouts/MainLayout";
 
 import Home from "./pages/Home";
 import Product from "./pages/Product";
@@ -13,19 +12,20 @@ import WhoIsThisFor from "./pages/Whoisthisfor";
 import HowItWorks from "./pages/Howitworks";
 import Impact from "./pages/Impact";
 import About from "./pages/About";
-import Footer from "./pages/Footer";
 import EarlyAccessPage from "./pages/Earlyaccess";
+import TermsPage from "./pages/Terms";
+import PrivacyPage from "./pages/Privacy";
+import NotFoundPage from "./pages/NotFound";
+import { Loader } from "lucide-react";
 
 function App() {
   return (
     <div className="min-h-screen flex flex-col">
-      {/* Active global scroll listener to reset view coordinates to (0,0) */}
       <ScrollToTop />
 
-      <Navigation />
-
-      <main className="flex-1">
-        <Routes>
+      <Routes>
+        {/* Pages with Navigation + Footer */}
+        <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/product" element={<Product />} />
           <Route path="/security" element={<Security />} />
@@ -36,9 +36,12 @@ function App() {
           <Route path="/early-access" element={<EarlyAccessPage />} />
           <Route path="/terms" element={<TermsPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
-        </Routes>
-      </main>
-      <Footer />
+        </Route>
+
+        {/* 404 page WITHOUT Navigation or Footer */}
+        <Route path="*" element={<NotFoundPage />} />
+        <Route path="loading" element={<Loader />} />
+      </Routes>
     </div>
   );
 }
