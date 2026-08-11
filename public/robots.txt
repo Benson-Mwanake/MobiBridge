@@ -1,5 +1,4 @@
 User-agent: *
-
 Allow: /
 
-Sitemap: https://mobibridge.netlify.app/sitemap.xml
+Sitemap: https://mobibridge.co.ke/sitemap.xml
