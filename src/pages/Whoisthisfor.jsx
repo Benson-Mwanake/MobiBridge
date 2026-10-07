@@ -7,6 +7,7 @@ import {
   Coins,
   CheckCircle2,
 } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 export default function WhoItsForPage() {
   const targetAudiences = [
@@ -77,6 +78,18 @@ export default function WhoItsForPage() {
   ];
 
   return (
+    <>
+  <Helmet>
+    <title>Who MobiBridge Is For | Clinics, NGOs & Field Teams</title>
+    <meta
+      name="description"
+      content="Built for clinics, hospitals, NGOs, rehabilitation centers, government programs and mobility aid donors who need shared visibility across organizations."
+    />
+    <link rel="canonical" href="https://mobibridge.co.ke/who-its-for" />
+    <meta property="og:title" content="Who MobiBridge Is For | Clinics, NGOs & Field Teams" />
+    <meta property="og:description" content="Built for the organizations that move mobility aids." />
+    <meta property="og:url" content="https://mobibridge.co.ke/who-its-for" />
+  </Helmet>
     <div className="bg-background text-foreground font-sans antialiased [font-feature-settings:'ss01','cv11'] min-h-screen w-full overflow-x-hidden">
       {/* =========================================================================
           HERO / PAGE HEADER SECTION
@@ -160,6 +173,7 @@ export default function WhoItsForPage() {
           </div>
         ))}
       </section>
-    </div>
+      </div>
+      </>
   );
 }

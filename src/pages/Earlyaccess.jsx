@@ -6,8 +6,9 @@ import {
   Shield,
   Calendar,
 } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
-export default function EarlyAccessPage() {
+  export default function EarlyAccessPage() {
   const valueProps = [
     {
       icon: <Building2 className="w-5 h-5 text-primary" />,
@@ -26,7 +27,19 @@ export default function EarlyAccessPage() {
     },
   ];
 
-  return (
+    return (
+    <>
+  <Helmet>
+    <title>Request Early Access | MobiBridge Pilot Cohort 2026</title>
+    <meta
+      name="description"
+      content="Join the 2026 pilot cohort. Early platform access for clinics, NGO coordinators and distribution teams deploying shared tracking infrastructure."
+    />
+    <link rel="canonical" href="https://mobibridge.co.ke/early-access" />
+    <meta property="og:title" content="Request Early Access | MobiBridge Pilot Cohort 2026" />
+    <meta property="og:description" content="Join the 2026 pilot cohort for shared mobility aid coordination." />
+    <meta property="og:url" content="https://mobibridge.co.ke/early-access" />
+  </Helmet>
     <div className="bg-background text-foreground font-sans antialiased [font-feature-settings:'ss01','cv11'] min-h-screen">
       {/* =========================================================================
           HERO / PAGE HEADER SECTION
@@ -209,6 +222,7 @@ export default function EarlyAccessPage() {
           </div>
         </div>
       </section>
-    </div>
+        </div>
+        </>
   );
 }

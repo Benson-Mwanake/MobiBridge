@@ -11,9 +11,22 @@ import {
   ArrowUpRight,
   Check,
 } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 export default function ProductPage() {
   return (
+    <>
+  <Helmet>
+    <title>Product – MobiBridge Healthcare Logistics Platform</title>
+    <meta
+      name="description"
+      content="Request management, inventory visibility, allocation workflow, delivery tracking, reporting and audit trail — the full MobiBridge platform capabilities."
+    />
+    <link rel="canonical" href="https://mobibridge.co.ke/product" />
+    <meta property="og:title" content="Product – MobiBridge Healthcare Logistics Platform" />
+    <meta property="og:description" content="A feature-by-feature look at the capabilities inside MobiBridge." />
+    <meta property="og:url" content="https://mobibridge.co.ke/product" />
+  </Helmet>
     <div className="bg-background text-foreground font-sans antialiased [font-feature-settings:'ss01','cv11'] min-h-screen w-full overflow-x-hidden">
       {/* =========================================================================
           HERO / PAGE HEADER
@@ -681,6 +694,7 @@ export default function ProductPage() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+      </>
   );
 }

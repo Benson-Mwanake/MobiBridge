@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 
 export default function AboutPage() {
   const clearSections = [
@@ -60,6 +61,18 @@ export default function AboutPage() {
   ];
 
   return (
+    <>
+  <Helmet>
+    <title>About MobiBridge | Healthcare Logistics in Kenya</title>
+    <meta
+      name="description"
+      content="MobiBridge is a coordination layer for mobility aid operations. Learn why it exists, the problem it solves, and the approach behind the platform."
+    />
+    <link rel="canonical" href="https://mobibridge.co.ke/about" />
+    <meta property="og:title" content="About MobiBridge | Healthcare Logistics in Kenya" />
+    <meta property="og:description" content="Built around a simple observation about how mobility aid delivery is coordinated today." />
+    <meta property="og:url" content="https://mobibridge.co.ke/about" />
+  </Helmet>
     <div className="bg-background text-foreground font-sans antialiased [font-feature-settings:'ss01','cv11'] min-h-screen w-full overflow-x-hidden">
       {/* =========================================================================
           HERO / PAGE HEADER SECTION
@@ -216,6 +229,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+      </>
   );
 }

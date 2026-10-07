@@ -22,6 +22,7 @@ import {
   ClipboardCheck,
   Users,
 } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 export default function Home() {
   const targets = [
@@ -70,6 +71,18 @@ export default function Home() {
   ];
 
   return (
+    <>
+  <Helmet>
+    <title>MobiBridge | Mobility Aid & Healthcare Logistics Coordination</title>
+    <meta
+      name="description"
+      content="MobiBridge is a healthcare logistics coordination platform helping clinics, hospitals, NGOs and field teams manage mobility aid requests, inventory, allocation and delivery in Kenya."
+    />
+    <link rel="canonical" href="https://mobibridge.co.ke/" />
+    <meta property="og:title" content="MobiBridge | Mobility Aid & Healthcare Logistics Coordination" />
+    <meta property="og:description" content="The coordination layer for mobility aid operations in Kenya." />
+    <meta property="og:url" content="https://mobibridge.co.ke/" />
+  </Helmet>
     <div className="min-h-screen bg-background text-foreground font-sans antialiased [font-feature-settings:'ss01','cv11']">
       {/* ==========================================
          1. HERO SECTION
@@ -517,6 +530,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+      </>
   );
 }

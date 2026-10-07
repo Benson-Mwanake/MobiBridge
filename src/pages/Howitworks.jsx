@@ -1,8 +1,21 @@
 import React from "react";
 import { AlertTriangle, RefreshCw } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 export default function HowItWorksPage() {
   return (
+    <>
+  <Helmet>
+    <title>How MobiBridge Works | Healthcare Logistics Platform Kenya</title>
+    <meta
+      name="description"
+      content="See how MobiBridge standardizes clinic requests, NGO allocation and field delivery of mobility aids so no patient request falls through the cracks."
+    />
+    <link rel="canonical" href="https://mobibridge.co.ke/how-it-works" />
+    <meta property="og:title" content="How MobiBridge Works | Healthcare Logistics Platform Kenya" />
+    <meta property="og:description" content="Clinic request → NGO review & allocation → Field delivery. Real-time coordination for mobility aids." />
+    <meta property="og:url" content="https://mobibridge.co.ke/how-it-works" />
+  </Helmet>
     <div className="bg-background text-foreground font-sans antialiased [font-feature-settings:'ss01','cv11'] min-h-screen w-full overflow-x-hidden">
       {/* =========================================================================
           HERO / PAGE HEADER SECTION
@@ -177,6 +190,7 @@ export default function HowItWorksPage() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+      </>
   );
 }

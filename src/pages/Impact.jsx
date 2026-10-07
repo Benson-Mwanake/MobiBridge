@@ -8,6 +8,7 @@ import {
   FileDown,
   Download,
 } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 export default function ImpactAndReportingPage() {
   const reportingCapabilities = [
@@ -59,6 +60,18 @@ export default function ImpactAndReportingPage() {
   ];
 
   return (
+    <>
+  <Helmet>
+    <title>Impact & Reporting | MobiBridge Mobility Aid Platform</title>
+    <meta
+      name="description"
+      content="Fulfillment metrics, time-to-delivery, regional distribution, partner performance and donor-ready exports — all generated from live operations."
+    />
+    <link rel="canonical" href="https://mobibridge.co.ke/impact" />
+    <meta property="og:title" content="Impact & Reporting | MobiBridge Mobility Aid Platform" />
+    <meta property="og:description" content="Aggregated insights with zero manual collection." />
+    <meta property="og:url" content="https://mobibridge.co.ke/impact" />
+  </Helmet>
     <div className="bg-background text-foreground font-sans antialiased [font-feature-settings:'ss01','cv11'] min-h-screen w-full overflow-x-hidden">
       {/* =========================================================================
           HERO HEADER / TOP CTA BLOCK
@@ -145,5 +158,6 @@ export default function ImpactAndReportingPage() {
         ))}
       </section>
     </div>
+    </>
   );
 }
